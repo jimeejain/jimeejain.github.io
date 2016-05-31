@@ -1,1 +1,282 @@
-<h1>COMING SOON.. Thank you for showing interest</h1>
+<html>
+    <head>
+        <title>Gulp Test</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    </head>
+    <style>
+    $color:green;
+body {
+background-color:$color;
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.clearfix:before,.clearfix:after{
+    clear:both;
+    display:block;
+    content:'';
+}
+nav{
+    width:100%;
+    height:50px;
+    top:0;
+    left:0;
+    position:fixed;
+    background-color:black;
+    display:block;
+    color:white;
+    z-index:1;
+}
+nav a{
+    text-decoration:none;
+    display:inline-block;
+    height:100%;
+    line-height:50px;
+    cursor:pointer;
+    padding:0 20px;
+    
+}
+nav a:hover{
+    background-color:green;
+    color:black;    
+}
+
+#intro{
+    width:300px;
+    top:250px;
+    padding:10px;
+    border:5px solid red;
+    border-style:double;
+    position:absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-family: monospace;
+    text-align: center;
+}
+
+.view{
+    width:100%;
+    min-height:100vh;
+    position:relative;
+}
+.viewhome{
+    background-color:blue;
+    padding-top:50px;
+    }
+.viewskill{
+    background-color:#D3E0E0;
+
+    min-height:100vh;
+}
+#skilltext{
+    font-weight:bold;
+    line-height:5px;
+    padding:20px;
+}
+#skills{
+    position:relative;
+}
+.skill{
+    width:150px;
+    height:60px;
+    text-align:center;
+    font-weight:bold;
+    border:5px solid black;
+    display:inline-block;
+    margin:30px 30px 30px 80px;
+    padding:10px;
+}
+#icon{margin:10px;}
+.viewcont{
+    background-color:#D3E0E0;
+    text-align:center;
+    font-weight:bold;
+    font-style:italic;
+    
+}
+.childcont{
+    padding:25%;
+    top:50%;
+}
+.viewedu{
+    background-color:#E8F3F3;
+    position:relative;
+}
+.viewedu h2{
+ text-align:center;
+ padding:10px;
+ color:#474d5d;
+}
+.row{
+    border-bottom:2px dashed red;
+    position:relative;
+    padding:30px;
+}
+
+.educir{
+    height:150px;
+    width:150px;
+    border-radius:100px;
+    background-color:#ff675f;
+    color:#fff;
+    line-height:150px;
+    text-align:center;
+    float:left;
+    font-weight: bold;
+}
+.eduTxt{
+top:0;
+margin-left:180px;
+color:#555;
+font-size: 1.2rem;
+}
+.viewabout{
+    background-color:#00bdbd;
+    position:relative;
+}
+.childabout{    
+text-align:center;
+    position:absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+    </style>
+    <body>
+        <nav>
+            <a>Home</a>
+            <a>Skills</a>
+            <a>About</a>
+            <a>Experience</a>
+            <a>Education</a>
+            <a>Contact</a>
+        </nav>
+        <div class="view viewhome">
+                 <div id="intro"> This is jimee and i am new to web development jimee and i am new </div>
+         </div>
+         <div class="view viewabout">
+            <div class="childabout">
+                <h1>About me</h1>
+                <h4>A brief description about myself</h4>
+                <p>Hello This is jimee. i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and i  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and i i am new to web developmentjimee and i am new to web development</p>
+            </div>
+        </div> 
+        <div class="view viewskill">
+            <h2 id="skilltext">Following are my skills:</h2>
+            <div id="skills"> 
+                
+                <div class="skill">
+                    <div>javascript</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>css3</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>HTML</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>Bootstrap</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>W3-css</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>PHP</div>
+                    <div id="icon">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+<!--                     <p class="skill">css3</p>
+                    <p class="skill">HTML</p>
+                    <p class="skill">Bootstrap</p>
+                    <p class="skill">W3-css</p>
+                    <p class="skill">PHP</p>
+                    <p class="skill">Mainframes</p>
+                    <p class="skill">Someother</p> -->
+            </div>
+        </div>  
+
+        <div class="view viewedu ">
+        <h2>Education and Experience</h2>
+            <div class="clearfix row">
+                <div class="eduCir ">2016-2014</div>
+                <div class="eduTxt ">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
+                </div>
+            <div class="clearfix row">
+                <div class="eduCir">2016-2014</div>
+                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
+            </div>
+            <div class="clearfix row">
+                <div class="eduCir">2016-2014</div>
+                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
+            </div>
+             <div class="clearfix row">
+                <div class="eduCir">2016-2014</div>
+                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
+            </div>
+            <div class="clearfix row">
+                <div class="eduCir">2016-2014</div>
+                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
+            </div>
+
+        </div>
+
+        <div class="view viewcont">
+            <div class="childcont">
+                <p>Catch me here :</p>
+                <p>Jimee Jain,</p>
+                <p>Sri sa Balaji Pg</p>
+                <p>Mob:8861041007</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+
