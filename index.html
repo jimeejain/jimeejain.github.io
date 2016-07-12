@@ -1,282 +1,254 @@
 <html>
-    <head>
-        <title>Gulp Test</title>
-        <link rel="stylesheet" href="base.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+  <link rel="stylesheet" href="/this/css/app.css">
+  <title>Jimee Jain</title>
+</head>
+<body>
+  <nav class="navBarContainer">
+    <input type="checkbox" id="toggleMenu" >
+    <label class="navText navIconOpen" for="toggleMenu">&#9776; Menu</label>
+    <label class="navText navIconClose" for="toggleMenu">&#x2718; Close</label>
+    <span class="navText navTitle">Jimee Jain</span>
+    <nav class="navlinksContainer">
+      <a class="navlinks" href="#home">Home</a>
+      <a class="navlinks" href="#aboutMe">About Me</a>
+      <a class="navlinks" href="#mySkills">Skills</a>
+      <a class="navlinks" href="#mySampleProjects">Projects</a>
+      <a class="navlinks" href="#timeline">Timeline</a>
+      <a class="navlinks" href="#contactMe">ContactMe</a>
+    </nav>
+  </nav>
+  <div class="fullView v-container" id="home">
+    <div class="v-item">
+      <h1 class="homeTitle txtCenter">Learner</h1>
+      <h5 class="homeSubHead txtCenter">Be Creative | Be Original | Be You</h5>
+    </div>
+  </div>
+  <div class="fullView" id="aboutMe">
+    <h1 class="headings">About Me</h1>
 
-    </head>
-    <style>
-    $color:green;
-body {
-background-color:$color;
-}
-*{
-    margin:0;
-    padding:0;
-    border:0;
-}
-.clearfix:before,.clearfix:after{
-    clear:both;
-    display:block;
-    content:'';
-}
-nav{
-    width:100%;
-    height:50px;
-    top:0;
-    left:0;
-    position:fixed;
-    background-color:black;
-    display:block;
-    color:white;
-    z-index:1;
-}
-nav a{
-    text-decoration:none;
-    display:inline-block;
-    height:100%;
-    line-height:50px;
-    cursor:pointer;
-    padding:0 20px;
-    
-}
-nav a:hover{
-    background-color:green;
-    color:black;    
-}
+    <section class="aboutEntry">
+      <h4 class="aboutHeader">Some Heading</h4>
+      <p class="aboutSummary">I am an enthusiastic and self motivated learner who want to try out new things and learn from it. i am looking for opportunities in front end developement but i am willing, able and excited to learn others as well. i am passionate about what i do.</p>
+    </section>
+    <section class="aboutEntry">
+      <h4 class="aboutHeader">Some Heading</h4>
+      <p class="aboutSummary">Some Text</p>
+    </section>
+    <section class="aboutEntry">
+      <h4 class="aboutHeader">Some Heading</h4>
+      <p class="aboutSummary">Some TExt</p>
+    </section>
 
-#intro{
-    width:300px;
-    top:250px;
-    padding:10px;
-    border:5px solid red;
-    border-style:double;
-    position:absolute;
-    left:50%;
-    top:40%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    font-family: monospace;
-    text-align: center;
-}
-
-.view{
-    width:100%;
-    min-height:100vh;
-    position:relative;
-}
-.viewhome{
-    background-color:blue;
-    padding-top:50px;
-    }
-.viewskill{
-    background-color:#D3E0E0;
-
-    min-height:100vh;
-}
-#skilltext{
-    font-weight:bold;
-    line-height:5px;
-    padding:20px;
-}
-#skills{
-    position:relative;
-}
-.skill{
-    width:150px;
-    height:60px;
-    text-align:center;
-    font-weight:bold;
-    border:5px solid black;
-    display:inline-block;
-    margin:30px 30px 30px 80px;
-    padding:10px;
-}
-#icon{margin:10px;}
-.viewcont{
-    background-color:#D3E0E0;
-    text-align:center;
-    font-weight:bold;
-    font-style:italic;
-    
-}
-.childcont{
-    padding:25%;
-    top:50%;
-}
-.viewedu{
-    background-color:#E8F3F3;
-    position:relative;
-}
-.viewedu h2{
- text-align:center;
- padding:10px;
- color:#474d5d;
-}
-.row{
-    border-bottom:2px dashed red;
-    position:relative;
-    padding:30px;
-}
-
-.educir{
-    height:150px;
-    width:150px;
-    border-radius:100px;
-    background-color:#ff675f;
-    color:#fff;
-    line-height:150px;
-    text-align:center;
-    float:left;
-    font-weight: bold;
-}
-.eduTxt{
-top:0;
-margin-left:180px;
-color:#555;
-font-size: 1.2rem;
-}
-.viewabout{
-    background-color:#00bdbd;
-    position:relative;
-}
-.childabout{    
-text-align:center;
-    position:absolute;
-    color:white;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-
-    </style>
-    <body>
-        <nav>
-            <a>Home</a>
-            <a>Skills</a>
-            <a>About</a>
-            <a>Experience</a>
-            <a>Education</a>
-            <a>Contact</a>
-        </nav>
-        <div class="view viewhome">
-                 <div id="intro"> This is jimee and i am new to web development jimee and i am new </div>
-         </div>
-         <div class="view viewabout">
-            <div class="childabout">
-                <h1>About me</h1>
-                <h4>A brief description about myself</h4>
-                <p>Hello This is jimee. i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and i  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and  i am very enthusiastic web developer and keen to leto web developmentjimee and i am new to web developmentjimee and i i am new to web developmentjimee and i am new to web development</p>
-            </div>
-        </div> 
-        <div class="view viewskill">
-            <h2 id="skilltext">Following are my skills:</h2>
-            <div id="skills"> 
-                
-                <div class="skill">
-                    <div>javascript</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div>css3</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div>HTML</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div>Bootstrap</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div>W3-css</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div>PHP</div>
-                    <div id="icon">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                </div>
-<!--                     <p class="skill">css3</p>
-                    <p class="skill">HTML</p>
-                    <p class="skill">Bootstrap</p>
-                    <p class="skill">W3-css</p>
-                    <p class="skill">PHP</p>
-                    <p class="skill">Mainframes</p>
-                    <p class="skill">Someother</p> -->
-            </div>
-        </div>  
-
-        <div class="view viewedu ">
-        <h2>Education and Experience</h2>
-            <div class="clearfix row">
-                <div class="eduCir ">2016-2014</div>
-                <div class="eduTxt ">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
-                </div>
-            <div class="clearfix row">
-                <div class="eduCir">2016-2014</div>
-                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
-            </div>
-            <div class="clearfix row">
-                <div class="eduCir">2016-2014</div>
-                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
-            </div>
-             <div class="clearfix row">
-                <div class="eduCir">2016-2014</div>
-                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
-            </div>
-            <div class="clearfix row">
-                <div class="eduCir">2016-2014</div>
-                <div class="eduTxt">this is minethis is minethis is minethis is minethis is minethis is minethis isminethis is minethis is minethis </div>
-            </div>
-
+  </div>
+  <div class="fullView" id="mySkills">
+    <h1 class="headings">My Skills</h1>
+    <!-- &#x2605; -filled stars -->
+    <!-- &#x2606; -blank starts -->
+    <ul class="skillsContainer">
+      <li class="skillCategory">
+        <h2 class="skillCatName">JavaScript</h2>
+        <ul class="skillCatList">
+          <li class="skillCatItem">
+            <h5 class="skillItemName">Core [ECMA 5]</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">Angular JS</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+        </ul>
+      </li>
+      <li class="skillCategory">
+        <h2 class="skillCatName">HTML</h2>
+        <ul class="skillCatList">
+          <li class="skillCatItem">
+            <h5 class="skillItemName">HTML</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">PHP (Basics)</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+        </ul>
+      </li>
+      <li class="skillCategory">
+        <h2 class="skillCatName">CSS</h2>
+        <ul class="skillCatList">
+          <li class="skillCatItem">
+            <h5 class="skillItemName">CSS2 / CSS3</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">Bootstrap 3</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">W3-CSS</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+        </ul>
+      </li>
+      <li class="skillCategory">
+        <h2 class="skillCatName">Mainframes</h2>
+        <ul class="skillCatList">
+          <li class="skillCatItem">
+            <h5 class="skillItemName">COBOL</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">JCL</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">DB 2</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+          <li class="skillCatItem">
+            <h5 class="skillItemName">CICS</h5>
+            <h6 class="skillItemRating">&#x2605; &#x2605; &#x2605; &#x2606; &#x2606;</h6>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="fullView" id="mySampleProjects">
+    <h1 class="headings">Sample Project</h1>
+    <ul>
+      <li class="row padding10">
+        <div class="col-40 txtCenter">
+          <a href="/tasklist" target="_blank">
+            <img class="projectImg" src="/this/img/dummy.jpg" alt=""/>
+          </a>
         </div>
-
-        <div class="view viewcont">
-            <div class="childcont">
-                <p>Catch me here :</p>
-                <p>Jimee Jain,</p>
-                <p>Sri sa Balaji Pg</p>
-                <p>Mob:8861041007</p>
-            </div>
+        <div class="col-60">
+          <h2 class="projectTitle"><a class="customlink" href="/tasklist" target="_blank">Task List</a></h2>
+          <p class="projectSummary">This is an interactive Multiple Choice Question Answer Application that includes 3 level of categoization in questions.</p>
+          <ul class="projectPointsContainer">
+            <li class="projectPoint">Multiple level of categorization</li>
+            <li class="projectPoint">To-do lists are stored using localstorage</li>
+          </ul>
         </div>
-
-    </body>
+      </li>
+      <li class="row padding10">
+        <div class="col-40 txtCenter">
+          <a href="/quizapp" target="_blank">
+            <img class="projectImg" src="/this/img/dummy.jpg" alt=""/>
+          </a>
+        </div>
+        <div class="col-60">
+          <h2 class="projectTitle"><a class="customlink" href="/quizapp" target="_blank">Quiz App</a></h2>
+          <p class="projectSummary">This is an interactive Multiple Choice Question Answer Application that includes 3 level of categoization in questions.</p>
+          <ul class="projectPointsContainer">
+            <li class="projectPoint">simulates real quiz application</li>
+            <li class="projectPoint">One question per view</li>
+          </ul>
+        </div>
+      </li>
+      <li class="row padding10">
+        <div class="col-40 txtCenter">
+          <a href="/socialnetwork" target="_blank">
+            <img class="projectImg" src="/this/img/dummy.jpg" alt=""/>
+          </a>
+        </div>
+        <div class="col-60">
+          <h2 class="projectTitle"><a class="customlink" href="/socialnetwork" target="_blank">Social Networking Dummy Website</a></h2>
+          <p class="projectSummary">This is an interactive Multiple Choice Question Answer Application that includes 3 level of categoization in questions.</p>
+          <ul class="projectPointsContainer">
+            <li class="projectPoint">Tryies to simultate social networking sites' posts and comment</li>
+            <li class="projectPoint">Consumes Dummy data from jsonplaceholder.io</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="fullView" id="timeline">
+    <h1 class="headings">Timeline</h1>
+    <ul>
+      <li class="timelineEvent">
+        <h2 class="tEventName">System Engineer at Infosys Limited</h2>
+        <h4 class="tEventDur">2014 - current</h4>
+        <p class="tEventSummary">System Engineer working for a bank client on Mainframe Development</p>
+        <ul class="tEventPointsContainer">
+          <li class="tEventPoint">Insta Award, for developing the automation tool.</li>
+          <li class="tEventPoint">Developed an automation tool for setting up environment for testing folks in my project.</li>
+          <li class="tEventPoint">Working on Cobol, JCL and DB2.</li>
+          <li class="tEventPoint">2 months training on Mainframes.</li>
+          <li class="tEventPoint">2 months training on Basic.</li>
+        </ul>
+      </li>
+      <li class="timelineEvent">
+        <h2 class="tEventName">B.Tech : Uttar Pradesh Technical University</h2>
+        <h4 class="tEventDur">2010 - 2014</h4>
+        <p class="tEventSummary">Completed Mechanical Engineering</p>
+        <ul class="tEventPointsContainer">
+          <li class="tEventPoint">Final year Project on Impact Analysis of bird on windshield using LS-Dyna Simulation Software.</li>
+          <li class="tEventPoint">Summer 2013 - Training at Simplex, Bhilai.</li>
+          <li class="tEventPoint">Summer 2012 - Pro-E and CAD  training at Jhansi, Hyd.</li>
+          <li class="tEventPoint">Got 3rd Rank at a paper presentation event at college. [Green Chemistry]</li>
+          <li class="tEventPoint">Got Various award for participation and organizing events at my college</li>
+        </ul>
+      </li>
+      <li class="timelineEvent">
+        <h2  class="tEventName">Inter College [12<sup>th</sup>] : U.P. Board</h2>
+        <h4 class="tEventDur">2007 - 2009</h4>
+        <p class="tEventSummary">Scored 73% 12th from Shri Tyag Murty Aatma Ram Khair Inter College, Gursarai- Jhansi (UP).</p>
+        <ul class="tEventPointsContainer">
+          <li class="tEventPoint">2 months training on Mainframes</li>
+          <li class="tEventPoint">2 months training on Basic</li>
+        </ul>
+      </li>
+      <li class="timelineEvent">
+        <h2 class="tEventName">HighSchool [10<sup>th</sup>] : U.P. Board</h2>
+        <h4 class="tEventDur">2005 - 2007</h4>
+        <p class="tEventSummary">Scored 79% in 10th from Sri Kalyan Bal Vidya Mandir,Gursarai- Jhansi (UP).</p>
+        <ul class="tEventPointsContainer">
+          <li class="tEventPoint">2 months training on Mainframes</li>
+          <li class="tEventPoint">2 months training on Basic</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="fullView" id="contactMe">
+    <h1 class="headings">Contact Me</h1>
+    <div class="row">
+      <div class="col-50 formContainer">
+        <form name="contactForm" action="https://formspree.io/contact@jimee.in	" method="POST">
+          <label class="formFileds">
+            Your Name * <br />
+            <input class="frmElems" required type="text" name="name" placeholder="Your Name goes here">
+          </label>
+          <label class="formFileds">
+            Your Mail-Id * <br />
+            <input class="frmElems" required type="email" name="_replyto" placeholder="eg. someone@example.com">
+          </label>
+          <label class="formFileds">
+            Message * <br />
+            <textarea name="message" required class="frmElems" placeholder="your message here" rows="5"></textarea>
+          </label>
+          <input type="hidden" name="_next" value="http://jimee.in/" />
+          <div class="txtCenter">
+            <button class="frmSubmitBtn" type="submit" >Boom . Send It !!!</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-50">
+        <div class="contactDetailContainer">
+          <h4 class="contactDetailTitle">E-Mail ID :</h4>
+          <div class="contactDetailValue">contact@jimee.in</div>
+        </div>
+        <div class="contactDetailContainer">
+          <h4 class="contactDetailTitle">Address</h4>
+          <div class="contactDetailValue">Bangalore, India</div>
+        </div>
+        <!-- <div class="contactDetailContainer">
+          <h4 class="contactDetailTitle">Phone</h4>
+          <div class="contactDetailValue">+91-88XXXXX007</div>
+        </div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3986919.551160186!2d78.0201099606136!3d12.616739768076117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1468343088494" style="width:100%;height:300px;" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="/this/js/app.js" ></script>
+</body>
 </html>
-

@@ -1,0 +1,355 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+/*Navigation Bar*/
+.navBarContainer{
+  position: fixed;
+  top:0px
+  left:0px;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  box-shadow: 5px 5px 8px #888;
+  background-color: #333;
+}
+.navText{
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  vertical-align: middle;
+  padding:0px 5px;
+  color:#FFF;
+}
+.navTitle{
+  font-family: monospace;
+  float: right;
+}
+#toggleMenu{
+  /*Hide this from view*/
+  position: fixed;
+  top:-1000px;
+  left:-1000px;
+}
+.navIconOpen{
+  display: inline-block;
+}
+.navIconClose{
+  display: none;
+  color:red;
+}
+#toggleMenu:checked ~ .navIconOpen{
+  display: none;
+}
+#toggleMenu:checked ~ .navIconClose{
+  display: inline-block;
+}
+
+.navlinksContainer{
+  position: relative;
+  left:-250px;
+  display: block;
+  width:200px;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: rgba(50,50,50,0.9);
+  z-index: 1000;
+  transition: all linear 0.3s;
+}
+#toggleMenu:checked ~ .navlinksContainer{
+  left:0;
+  transition: all linear 0.3s;
+}
+.navlinks{
+    display: block;
+    padding:0px 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color:#FFF;
+    transition: all linear 0.3s;
+}
+.navlinks:hover{
+  background-color: rgb(100,100,100);
+}
+
+/*Helper Classes for general Use*/
+.fullView{
+  width: 100%;
+  min-height: 100vh;
+  padding-top:50px; /*Keep it for the nav bar*/
+  /*border-bottom:2px dashed #888;*/
+}
+.v-container{
+  position: relative;
+}
+.v-item{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.txtCenter{
+  text-align: center;
+}
+.headings{
+  font-size:2rem;
+  font-family: monospace;
+  border-bottom:2px dotted #AAAAAA;
+  padding:15px 10px;
+  color:#333;
+}
+.padding10{padding:10px;}
+.customlink{
+  color:#333;
+  display: inline-block;
+  border-bottom:1px dotted transparent;
+}
+.customlink:hover{
+  border-bottom-color:#555;
+}
+/*Banner View*/
+#home{
+
+}
+.homeTitle{
+  font-size: 4rem;
+  color:#333;
+  font-family: monospace;
+}
+.homeSubHead{
+  font-size: 1.2rem;
+  color:#555;
+}
+
+/*About ME*/
+#aboutMe{
+
+}
+.aboutEntry{
+  padding:10px;
+}
+.aboutHeader{
+  color:#353535;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+.aboutSummary{
+  color:#444;
+}
+/*My Skills*/
+#mySkills{
+
+}
+.skillsContainer{
+  padding: 10px 10px;
+}
+.skillCategory{
+  display: block;
+  margin-top: 10px;
+}
+.skillCatName{
+  padding-left:20px;
+  display: inline-block;
+  border-left:1px dotted #333;
+  color:#333;
+  font-family: monospace;
+}
+.skillCatList{
+  margin-left:50px;
+  padding:10px;
+}
+.skillCatItem{
+  display: inline-block;
+  padding:15px;
+  border-right:1px dotted #555;
+}
+.skillCatItem:last-child{
+  border-right-color: transparent;
+}
+.skillItemName{
+  color:#353535;
+  font-size: 0.9rem;
+}
+.skillItemRating{
+  color:#444;
+  font-size: 0.9rem;
+}
+/*My Sample Projects*/
+#mySampleProjects{
+  background-color: #D3E0E0;
+}
+.projectTitle{
+  color:#333;
+}
+.projectSummary{
+  padding:5px 0px;
+  color:#444;
+}
+.projectPointsContainer{
+  margin-left:50px;
+}
+.projectPoint{
+  color:#444;
+  list-style-type: circle;
+}
+
+/*My Education*/
+#timeline{
+  background-color: #E8F3F3;
+}
+.timelineEvent{
+  margin-top: 20px;
+  padding:10px 10px 30px 10px;
+  border-bottom: 2px dotted #999;
+}
+.tEventName{
+  padding:5px 0;
+  font-size: 1.5rem;
+  color:#333;
+  font-family: monospace;
+}
+.tEventDur{
+  position: relative;
+  font-size: 0.75rem;
+  padding:2px 0;
+  color:#777;
+  font-family: monospace;
+}
+.tEventSummary{
+  padding:5px 0;
+  font-size: 1rem;
+  color:#555;
+}
+.tEventPointsContainer{
+  margin-left: 50px;
+  margin-top:10px;
+  color:#444;
+}
+.tEventPoint{
+  list-style-type: circle;
+
+}
+@media screen and (min-width: 600px) {
+  .timelineEvent{
+    position: relative;
+    width:calc(100% - 175px);
+    min-height: 175px;
+    margin-left: 175px;
+  }
+  .tEventDur{
+    position: absolute;
+    top:0px;
+    left:-150px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 75px;
+    background-color: #ff675f;
+    font-size: 1rem;
+    color:#333;
+  }
+}
+/*Contact Me*/
+#contactMe{
+  background-color: #555;
+}
+#contactMe .headings{
+  color:#EEE;
+}
+.formContainer{
+  border-right: 2px dotted #AAAAAA;
+}
+.formFileds{
+  display: block;
+  padding:20px;
+  color: #EEE;
+  font-size: 1.1rem
+}
+.frmElems{
+  width: 100%;
+  padding:10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+.frmSubmitBtn{
+  text-align:center;
+  font-size: 1rem;
+  padding:15px;
+  cursor: pointer;
+  background-color: #EEE;
+  color:#333;
+  transition: all linear 0.15s;
+
+}
+.frmSubmitBtn:hover{
+  background-color: #333;
+  color:#EEE;
+  transform: scale(1.2);
+  transition: all linear 0.15s;
+}
+.contactDetailContainer{
+  padding:10px;
+  margin-top:15px;
+}
+.contactDetailTitle{
+  color:#EEE;
+  font-size: 1.2rem;
+}
+.contactDetailValue{
+  color:#CCC;
+  font-size: 1.1rem;
+}
+
+
+/*Custom Grid*/
+.row{
+  display: block;
+  width: 100%;
+}
+.row:before,.row:after{
+  display: block;
+  content:' ';
+  clear:both;
+}
+.col-40{
+  width:100%;
+  float: left;
+}
+.col-50{
+  width:100%;
+  float: left;
+}
+.col-60{
+  width:100%;
+  float: left;
+}
+@media screen and (min-width: 600px) {
+    .col-40{
+      width: 40%;
+    }
+    .col-50{
+      width: 50%;
+    }
+    .col-60{
+      width: 60%;
+    }
+}
