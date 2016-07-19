@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+ <body ng-app="cricApp" ng-controller="mainController">
+   <ol>
+     <li ng-repeat="obj in data">
+       <h2 ng-bind="obj.title"></h2>
+       <h4 ng-bind="obj.body"></h4>
+    </li>
+   </ol>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+ </body>
+</html>

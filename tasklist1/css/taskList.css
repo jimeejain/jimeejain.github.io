@@ -1,0 +1,52 @@
+/*
+  Helper CSS
+*/
+.padd-r0{
+  padding-right: 0px;
+}
+.w3-modal{
+  display: block;
+}
+
+.clickable,.material-icons{
+  cursor: pointer;
+}
+.transition{
+  transition: all linear 0.25s;
+}
+/*G*/
+.rowContainer{
+  column-count: 1;
+  column-gap: 2;
+}
+.rowItem{
+  display: inline-block;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.taskText{
+  display: inline-block;
+  width:calc(100% - 50px);
+  cursor: pointer;
+}
+.tlFooter{
+  margin-right: 2px;
+  padding-top: 5px;
+}
+.addTaskListBtn{
+  position: fixed;
+  right: 20px;
+  bottom:20px;
+  display: inline-block;
+}
+@media screen and (min-width: 480px) {
+    .rowContainer{
+      column-count: 2;
+    }
+}
+@media screen and (min-width: 786px) {
+  .rowContainer{
+    column-count: 3;
+  }
+}
