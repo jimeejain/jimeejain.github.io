@@ -95,6 +95,9 @@ a{
   padding-top:50px; /*Keep it for the nav bar*/
   /*border-bottom:2px dashed #888;*/
 }
+.image{
+	background-image:url("imageSky.jpg");
+}
 .v-container{
   position: relative;
 }
@@ -107,7 +110,9 @@ a{
 .txtCenter{
   text-align: center;
 }
+
 .headings{
+
   font-size:2rem;
   font-family: monospace;
   border-bottom:2px dotted #AAAAAA;
@@ -139,10 +144,44 @@ a{
 
 /*About ME*/
 #aboutMe{
-
+	background-color:#eeeeee;
+}
+.about{
+	margin: 0 0 8px 0;
+    padding: 0;
+    font-size: 2.250em;
+    font-weight: 300;
+    color: #0f1025;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.line{
+	width: 190px;
+    height: 3px;
+	margin-bottom:50px;
+    padding: 0!important;
+	background-color:#4081a3;
+	margin-left:auto;
+	margin-right:auto;
 }
 .aboutEntry{
   padding:10px;
+  margin-left:270px;
+  margin-right:270px;
+  text-align:left;
+}
+.aboutEntry h3{
+	font-weight: 350;	
+    padding-bottom: 6px;
+}
+.name{
+	font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 6px;
+    font-weight: 400;
 }
 .aboutHeader{
   color:#353535;
@@ -152,6 +191,7 @@ a{
 }
 .aboutSummary{
   color:#444;
+  font-size:1.2em;
 }
 /*My Skills*/
 #mySkills{
@@ -194,6 +234,11 @@ a{
 /*My Sample Projects*/
 #mySampleProjects{
   background-color: #D3E0E0;
+}
+.projectImg{
+	width:300px;
+	height:200px;
+	border-radius:10px;
 }
 .projectTitle{
   color:#333;
