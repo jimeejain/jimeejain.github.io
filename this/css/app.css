@@ -32,6 +32,7 @@ a{
   vertical-align: middle;
   padding:0px 5px;
   color:#FFF;
+  cursor:pointer;
 }
 .navTitle{
   font-family: monospace;
@@ -42,7 +43,6 @@ a{
   position: fixed;
   top:-1000px;
   left:-1000px;
-  cursor:pointer;
 }
 .navIconOpen{
   display: inline-block;
@@ -50,7 +50,6 @@ a{
 .navIconClose{
   display: none;
   color:red;
-  cursor:pointer;
 }
 #toggleMenu:checked ~ .navIconOpen{
   display: none;
