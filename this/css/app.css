@@ -42,6 +42,7 @@ a{
   position: fixed;
   top:-1000px;
   left:-1000px;
+  cursor:pointer;
 }
 .navIconOpen{
   display: inline-block;
@@ -49,6 +50,7 @@ a{
 .navIconClose{
   display: none;
   color:red;
+  cursor:pointer;
 }
 #toggleMenu:checked ~ .navIconOpen{
   display: none;
